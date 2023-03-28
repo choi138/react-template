@@ -1,14 +1,12 @@
-import { BrowserRouter as Router, Routes } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
 
-function App() {
+export const App: React.FC = () => {
   return (
-    <>
-      <Router>
-        <Routes>
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes></Routes>
+    </Router>
   );
-}
+};
 
 export default App;

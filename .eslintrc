@@ -4,8 +4,17 @@
     "browser": true
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["prettier", "import", "react", "react-hooks", "jsx-a11y"],
-  "extends": ["prettier", "plugin:@typescript-eslint/recommended"],
+  "plugins": [
+    "prettier",
+    "import",
+    "react",
+    "react-hooks",
+    "jsx-a11y"
+  ],
+  "extends": [
+    "prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
     "no-unused-vars": "off",
     "prettier/prettier": [
@@ -43,14 +52,18 @@
           "index",
           "unknown"
         ],
-        "pathGroupsExcludedImportTypes": ["react"],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ],
         "newlines-between": "always"
       }
     ],
     "react/jsx-filename-extension": [
       "warn",
       {
-        "extensions": [".tsx"]
+        "extensions": [
+          ".tsx"
+        ]
       }
     ],
     "react/jsx-no-target-blank": "error",
@@ -61,12 +74,20 @@
   },
   "overrides": [
     {
-      "files": ["**/*.ts?(x)"],
+      "files": [
+        "**/*.ts?(x)"
+      ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "project": ["./tsconfig.json", "./tsconfig.eslint.json", "./tsconfig.node.json"]
+        "project": [
+          "./tsconfig.json",
+          "./tsconfig.eslint.json",
+          "./tsconfig.node.json"
+        ]
       },
-      "extends": ["plugin:@typescript-eslint/recommended"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended"
+      ],
       "rules": {
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-floating-promises": "off",
@@ -89,9 +110,17 @@
       "version": "detect"
     },
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
     },
-    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/extensions": [
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ],
     "import/resolver": {
       "typescript": {}
     }
