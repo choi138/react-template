@@ -24,7 +24,10 @@
       "@/*": [
         "src/*"
       ]
-    }
+    },
+    "typeRoots": [
+      "src/types"
+    ],
   },
   "include": [
     "src"

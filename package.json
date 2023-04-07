@@ -24,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx,json}\" --fix --cache",
+    "format": "prettier \"**/*.{js,jsx,ts,tsx,json}\" --write"
   },
   "eslintConfig": {
     "extends": [
@@ -46,10 +48,13 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react-swc": "^3.2.0",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.7",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "vite": "^4.2.1"
   }
 }
