@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { RecoilRoot } from 'recoil';
 
 import App from './App';
-import { GlobalStyle } from './styles/GlobalStyle';
+import { GlobalStyle } from './styles';
 
 const client = new QueryClient();
 
